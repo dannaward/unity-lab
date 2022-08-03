@@ -892,6 +892,37 @@ ReflectionProbe:
   m_UseOcclusionCulling: 1
   m_Importance: 1
   m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &1975729438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1975729439}
+  m_Layer: 0
+  m_Name: HipsAdjust
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1975729439
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975729438}
+  m_LocalRotation: {x: -0.0000000040745367, y: -1.8179902e-14, z: 3.907985e-14, w: 1}
+  m_LocalPosition: {x: -0, y: 0.01669699, z: -9.313226e-10}
+  m_LocalScale: {x: 1.0018542, y: 1.0018541, z: 1.0018541}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7144891084434190375}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2017640888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1513,10 +1544,10 @@ MonoBehaviour:
     animators:
     - raceName: ToonFemale
       animatorControllerName: IdleTest-w-head
-      animatorController: {fileID: 0}
+      animatorController: {fileID: 9100000, guid: f0ae291110d799142ba94baf538f376c, type: 2}
     - raceName: HumanMaleDCS
       animatorControllerName: Locomotion with Head
-      animatorController: {fileID: 0}
+      animatorController: {fileID: 9100000, guid: ae859d58fdf844b73863d3833f955cdf, type: 2}
     - raceName: HumanFemaleResources
       animatorControllerName: Locomotion with Head
       animatorController: {fileID: 0}
@@ -1669,6 +1700,24 @@ MonoBehaviour:
       Raw: 0
       valuesConverted: 0
     - name: Pants Accent
+      channelMask:
+      - {r: 1, g: 1, b: 1, a: 1}
+      - {r: 1, g: 1, b: 1, a: 1}
+      - {r: 1, g: 1, b: 1, a: 1}
+      channelAdditiveMask:
+      - {r: 0, g: 0, b: 0, a: 0}
+      - {r: 0, g: 0, b: 0, a: 0}
+      - {r: 0, g: 0, b: 0, a: 0}
+      PropertyBlock:
+        alwaysUpdate: 0
+        serializedProperties: []
+      foldout: 0
+      _name: 
+      _color: {r: 1, g: 1, b: 1, a: 1}
+      _metallicGloss: {r: 0, g: 0, b: 0, a: 0}
+      Raw: 0
+      valuesConverted: 0
+    - name: Lipstick
       channelMask:
       - {r: 1, g: 1, b: 1, a: 1}
       - {r: 1, g: 1, b: 1, a: 1}
@@ -2792,7 +2841,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4837770428017292224}
-  m_LocalRotation: {x: -0.0019099626, y: -0.20588218, z: -0.052058566, w: 0.97718924}
+  m_LocalRotation: {x: -0.0019099184, y: -0.20588222, z: -0.052058596, w: 0.97718924}
   m_LocalPosition: {x: -0.44406348, y: -0.000000045955222, z: 0.000000057444}
   m_LocalScale: {x: 0.99999976, y: 0.99999994, z: 0.9999999}
   m_ConstrainProportionsScale: 0
@@ -5082,7 +5131,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8489391827857832318}
-  m_LocalRotation: {x: -0.12658753, y: -0.06886733, z: 0.9894133, w: 0.01715393}
+  m_LocalRotation: {x: -0.12658754, y: -0.06886735, z: 0.9894133, w: 0.017154047}
   m_LocalPosition: {x: 0.016968187, y: -0.10305052, z: 0.001985059}
   m_LocalScale: {x: 0.8999992, y: 0.8999994, z: 0.89999986}
   m_ConstrainProportionsScale: 0
@@ -5426,6 +5475,7 @@ Transform:
   - {fileID: 5088092504940402833}
   - {fileID: 6555136476514647501}
   - {fileID: 8164013678440324611}
+  - {fileID: 1975729439}
   m_Father: {fileID: 7482490767645352582}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6255,7 +6305,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2275470375363795834}
-  m_LocalRotation: {x: 0.8152115, y: -0.032782998, z: -0.57236254, w: 0.0821991}
+  m_LocalRotation: {x: 0.8152115, y: -0.032782864, z: -0.5723625, w: 0.08219917}
   m_LocalPosition: {x: -0.52166355, y: 0.00000013859388, z: 0.0000000014436857}
   m_LocalScale: {x: 0.88907385, y: 0.8890735, z: 0.88907355}
   m_ConstrainProportionsScale: 0
